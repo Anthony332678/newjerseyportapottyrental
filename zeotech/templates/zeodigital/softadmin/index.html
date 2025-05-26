@@ -1,0 +1,619 @@
+﻿<html><head><meta charset="UTF-8"><title>Zeodigital Administration Server</title>
+<link href="../static/aloomaspecial/alooma1.css" rel="stylesheet" type="text/css">
+<style>
+* {  box-sizing: border-box;}.row::after {  content: "";  clear: both;  display: table;}[class*="col-"] {  float: left;  padding: 15px;}/* For mobile phones: */[class*="col-"] {  width: 100%;}@media only screen and (min-width: 600px) {  /* For tablets: */  .col-s-1 {width: 8.33%;}  .col-s-2 {width: 16.66%;}  .col-s-3 {width: 25%;}  .col-s-4 {width: 33.33%;}  .col-s-5 {width: 41.66%;}  .col-s-6 {width: 50%;}  .col-s-7 {width: 58.33%;}  .col-s-8 {width: 66.66%;}  .col-s-9 {width: 75%;}  .col-s-10 {width: 83.33%;}  .col-s-11 {width: 91.66%;}  .col-s-12 {width: 100%;}}@media only screen and (min-width: 768px) {  /* For desktop: */  .col-1 {width: 8.33%;}  .col-2 {width: 16.66%;}  .col-3 {width: 25%;}  .col-4 {width: 33.33%;}  .col-5 {width: 41.66%;}  .col-6 {width: 50%;}  .col-7 {width: 58.33%;}  .col-8 {width: 66.66%;}  .col-9 {width: 75%;}  .col-10 {width: 83.33%;}  .col-11 {width: 91.66%;}  .col-12 {width: 100%;}}@media only screen and (min-width: 992px) {  .col-m-1 {width: 8.33%;}  .col-m-2 {width: 16.66%;}  .col-m-3 {width: 25%;}  .col-m-4 {width: 33.33%;}  .col-m-5 {width: 41.66%;}  .col-m-6 {width: 50%;}  .col-m-7 {width: 58.33%;}  .col-m-8 {width: 66.66%;}  .col-m-9 {width: 75%;}  .col-m-10 {width: 83.33%;}  .col-m-11 {width: 91.66%;}  .col-m-12 {width: 100%;}} @media only screen and (min-width: 1200px) {  .col-l-1 {width: 8.33%;}  .col-l-2 {width: 16.66%;}  .col-l-3 {width: 25%;}  .col-l-4 {width: 33.33%;}  .col-l-5 {width: 41.66%;}  .col-l-6 {width: 50%;}  .col-l-7 {width: 58.33%;}  .col-l-8 {width: 66.66%;}  .col-l-9 {width: 75%;}  .col-l-10 {width: 83.33%;}  .col-l-11 {width: 91.66%;}  .col-l-12 {width: 100%;}}
+</style>
+<script src="../static/aloomaspecial/alooma1.js"></script>
+</head><body class="zf-backgroundBg"><!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+<div class="zf-templateWidth"><form action="#" method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+	<input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+<div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+<ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle"><em>Zeodigital Administration Server</em></h2>
+<p class="zf-frmDesc"></p>
+<div class="zf-clearBoth"></div></li></ul><!---------template Header Ends Here---------->
+<!---------template Container Starts Here---------->
+<div class="zf-subContWrap zf-topAlign"><ul>
+<!---------Single Line Starts Here---------->
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+Domain Site 
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv">
+<span> <input type="text" name="domainsitename" checktype="c1" value="" maxlength="100000" fieldType=1 placeholder="Enter Your domain site" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Single Line Ends Here---------->
+<!---------Single Line Starts Here---------->
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Site Name 
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input type="text" name="sitename" checktype="c1" value="" maxlength="100000" fieldType=1 placeholder="Enter Your site name" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li><!---------Single Line Ends Here---------->
+<!--address-->
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Phone Number
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input style="width: 100%;" type="tel" name="phone_number" checktype="c1" value="" maxlength="100000" fieldType=1 placeholder="Enter Your Phone Number" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li>
+
+
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Page Color
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input style="width: 100%;" type="tel" name="pagecolor" checktype="c1" value="" maxlength="100000" fieldType=1 placeholder="Add page color" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li>
+	
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Box Page Color
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input style="width: 100%;" type="tel" name="boxpagecolor" checktype="c1" value="" maxlength="100000" fieldType=1 placeholder="Add box page color" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li>
+	
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Site Root
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input style="width: 100%;" type="tel" name="siteroot" checktype="c1" value="" maxlength="100000" fieldType=1 placeholder="/ or /locksmith/" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li>
+	
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Population limit(Highest Population is 5000 and the Lowest is 0)
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input style="width: 100%;" type="number" maxlength="100000" name="populations" checktype="c1" placeholder="Population limit" required/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li>
+<!---------Address Starts Here---------->  
+<li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName"> 
+Page Format
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv zf-address">
+<div class="zf-addrCont">
+<span class="zf-addOne"> <select style="width: 100%;" class="zf-form-sBox" name="selectedpages" checktype="c1">
+	<option value="All Pages">All Pages</option>
+	<option value="Selected State Pages">Selected State Pages</option>
+	<option value="Excluded State Pages">Excluded State Pages</option>
+</select>
+ </span>
+ 
+<span class="zf-addOne"> <input type="text" maxlength="100000" name="Longformurl" checktype="c1" placeholder="Enter Long Form" required/>
+<label>Long Form</label>
+ </span>
+
+<span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="100000" name="shortformurl" checktype="c1" placeholder="Enter Short Form" required/>
+<label>Short Form</label>
+ </span>
+ <!-- <span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="255" name="Address_Region" checktype="c1" placeholder=""/>
+<label>State/Region/Province</label>
+ </span> -->
+
+
+<div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div></div><div class="zf-eclearBoth"></div></li>
+<!---------Radio Starts Here---------->    
+<li class="zf-radio zf-tempFrmWrapper zf-oneColumns"><label class="zf-labelName">Do you need County Page?
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<div class="zf-overflow">
+	<span class="zf-multiAttType"> 
+	<input class="zf-radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Yes">
+	<label for="Radio_1" class="zf-radioChoice">Yes</label> </span>
+	<span class="zf-multiAttType"> 
+	<input class="zf-radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="No">
+	<label for="Radio_2" class="zf-radioChoice">No</label> </span>
+	<div class="zf-clearBoth"></div></div><p id="Radio_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li><!---------Radio Ends Here---------->    
+
+
+<li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName"> 
+	Home Page
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv zf-address">
+	<div class="zf-addrCont">
+	<span class="zf-addOne"> 
+		</span>
+		
+	<span class="zf-addOne"> <input type="text" maxlength="100000" name="metatitlehomepage" checktype="c1" placeholder="Enter Meta Title Format" required/>
+	<label>Meta Title</label>
+		</span>
+	
+	<span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="100000" name="metadescriptionhomepage" checktype="c1" placeholder="Enter Meta Description Format" required/>
+	<label>Meta Description</label>
+		</span>
+	
+	<div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div></div><div class="zf-eclearBoth"></div></li>
+</li>
+
+<li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName"> 
+	State
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv zf-address">
+	<div class="zf-addrCont">
+	<span class="zf-addOne"> 
+	 </span>
+	 
+	<span class="zf-addOne"> <input type="text" maxlength="100000" name="metatitlestatepage" checktype="c1" placeholder="Enter Meta Title Format" required/>
+	<label>Meta Title</label>
+	 </span>
+	
+	<span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="100000" name="metadescriptionstatepage" checktype="c1" placeholder="Enter Meta Description Format" required/>
+	<label>Meta Description</label>
+	 </span>
+	<div class="zf-clearBoth"></div>
+	<p id="Address_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div></div><div class="zf-eclearBoth"></div>
+	
+</li>
+</li>
+<!-- ---------------------------------- -->
+<label class="zf-labelName" style="margin-left: 15px;"> 
+	For Both Selected and Excluded
+	<em class="zf-important">if required</em>
+	</label>
+<li class="zf-checkbox zf-tempFrmWrapper zf-oneColumns">
+<div class="zf-tempContDiv">
+<div class="zf-overflow">
+<div class="row">
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_1" name="Checkbox" checktype="c1" value="New York"/>
+			<label for="Checkbox_1" class="zf-checkChoice">New York</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_2" name="Checkbox" checktype="c1" value="California"/>
+			<label for="Checkbox_2" class="zf-checkChoice">California</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_3" name="Checkbox" checktype="c1" value="Illinois"/>
+			<label for="Checkbox_3" class="zf-checkChoice">Illinois</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_4" name="Checkbox" checktype="c1" value="Florida"/>
+			<label for="Checkbox_4" class="zf-checkChoice">Florida</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_5" name="Checkbox" checktype="c1" value="Texas"/>
+			<label for="Checkbox_5" class="zf-checkChoice">Texas</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_6" name="Checkbox" checktype="c1" value="Pennsylvania"/>
+			<label for="Checkbox_6" class="zf-checkChoice">Pennsylvania</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_7" name="Checkbox" checktype="c1" value="Georgia"/>
+			<label for="Checkbox_7" class="zf-checkChoice">Georgia</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_8" name="Checkbox" checktype="c1" value="District Of Columbia"/>
+			<label for="Checkbox_8" class="zf-checkChoice">District Of Columbia</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_9" name="Checkbox" checktype="c1" value="Massachusetts"/>
+			<label for="Checkbox_9" class="zf-checkChoice">Massachusetts</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_10" name="Checkbox" checktype="c1" value="Arizona"/>
+			<label for="Checkbox_10" class="zf-checkChoice">Arizona</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_11" name="Checkbox" checktype="c1" value="Michigan"/>
+			<label for="Checkbox_11" class="zf-checkChoice">Michigan</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_12" name="Checkbox" checktype="c1" value="Washington"/>
+			<label for="Checkbox_12" class="zf-checkChoice">Washington</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_13" name="Checkbox" checktype="c1" value="Minnesota"/>
+			<label for="Checkbox_13" class="zf-checkChoice">Minnesota</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_14" name="Checkbox" checktype="c1" value="Colorado"/>
+			<label for="Checkbox_14" class="zf-checkChoice">Colorado</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_15" name="Checkbox" checktype="c1" value="Maryland"/>
+			<label for="Checkbox_15" class="zf-checkChoice">Maryland</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_16" name="Checkbox" checktype="c1" value="Nevada"/>
+			<label for="Checkbox_16" class="zf-checkChoice">Nevada</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_17" name="Checkbox" checktype="c1" value="Missouri"/>
+			<label for="Checkbox_17" class="zf-checkChoice">Missouri</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_18" name="Checkbox" checktype="c1" value="Oregon"/>
+			<label for="Checkbox_18" class="zf-checkChoice">Oregon</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_19" name="Checkbox" checktype="c1" value="Ohio"/>
+			<label for="Checkbox_19" class="zf-checkChoice">Ohio</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_20" name="Checkbox" checktype="c1" value="Indiana"/>
+			<label for="Checkbox_20" class="zf-checkChoice">Indiana</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_21" name="Checkbox" checktype="c1" value="North Carolina"/>
+			<label for="Checkbox_21" class="zf-checkChoice">North Carolina</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_22" name="Checkbox" checktype="c1" value="Virginia"/>
+			<label for="Checkbox_22" class="zf-checkChoice">Virginia</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_23" name="Checkbox" checktype="c1" value="Wisconsin"/>
+			<label for="Checkbox_23" class="zf-checkChoice">Wisconsin</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_24" name="Checkbox" checktype="c1" value="Rhode Island"/>
+			<label for="Checkbox_24" class="zf-checkChoice">Rhode Island</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_25" name="Checkbox" checktype="c1" value="Utah"/>
+			<label for="Checkbox_25" class="zf-checkChoice">Utah</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_26" name="Checkbox" checktype="c1" value="Tennessee"/>
+			<label for="Checkbox_26" class="zf-checkChoice">Tennessee</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_27" name="Checkbox" checktype="c1" value="Kentucky"/>
+			<label for="Checkbox_27" class="zf-checkChoice">Kentucky</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_28" name="Checkbox" checktype="c1" value="Oklahoma"/>
+			<label for="Checkbox_28" class="zf-checkChoice">Oklahoma</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_29" name="Checkbox" checktype="c1" value="Connecticut"/>
+			<label for="Checkbox_29" class="zf-checkChoice">Connecticut</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_30" name="Checkbox" checktype="c1" value="Louisiana"/>
+			<label for="Checkbox_30" class="zf-checkChoice">Louisiana</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_31" name="Checkbox" checktype="c1" value="Hawaii"/>
+			<label for="Checkbox_31" class="zf-checkChoice">Hawaii</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_32" name="Checkbox" checktype="c1" value="Nebraska"/>
+			<label for="Checkbox_32" class="zf-checkChoice">Nebraska</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_33" name="Checkbox" checktype="c1" value="New Mexico"/>
+			<label for="Checkbox_33" class="zf-checkChoice">New Mexico</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_34" name="Checkbox" checktype="c1" value="Alabama"/>
+			<label for="Checkbox_34" class="zf-checkChoice">Alabama</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_35" name="Checkbox" checktype="c1" value="South Carolina"/>
+			<label for="Checkbox_35" class="zf-checkChoice">South Carolina</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_36" name="Checkbox" checktype="c1" value="Iowa"/>
+			<label for="Checkbox_36" class="zf-checkChoice">Iowa</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_37" name="Checkbox" checktype="c1" value="Kansas"/>
+			<label for="Checkbox_37" class="zf-checkChoice">Kansas</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_38" name="Checkbox" checktype="c1" value="Arkansas"/>
+			<label for="Checkbox_38" class="zf-checkChoice">Arkansas</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_39" name="Checkbox" checktype="c1" value="Idaho"/>
+			<label for="Checkbox_39" class="zf-checkChoice">Idaho</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_40" name="Checkbox" checktype="c1" value="Mississippi"/>
+			<label for="Checkbox_40" class="zf-checkChoice">Mississippi</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_41" name="Checkbox" checktype="c1" value="New Jersey"/>
+			<label for="Checkbox_41" class="zf-checkChoice">New Jersey</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_42" name="Checkbox" checktype="c1" value="Alaska"/>
+			<label for="Checkbox_42" class="zf-checkChoice">Alaska</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_43" name="Checkbox" checktype="c1" value="New Hampshire"/>
+			<label for="Checkbox_43" class="zf-checkChoice">New Hampshire</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_44" name="Checkbox" checktype="c1" value="Maine"/>
+			<label for="Checkbox_44" class="zf-checkChoice">Maine</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_45" name="Checkbox" checktype="c1" value="North Dakota"/>
+			<label for="Checkbox_45" class="zf-checkChoice">North Dakota</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_46" name="Checkbox" checktype="c1" value="West Virginia"/>
+			<label for="Checkbox_46" class="zf-checkChoice">West Virginia</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_47" name="Checkbox" checktype="c1" value="South Dakota"/>
+			<label for="Checkbox_47" class="zf-checkChoice">South Dakota</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_48" name="Checkbox" checktype="c1" value="Delaware"/>
+			<label for="Checkbox_48" class="zf-checkChoice">Delaware</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_49" name="Checkbox" checktype="c1" value="Montana"/>
+			<label for="Checkbox_49" class="zf-checkChoice">Montana</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_50" name="Checkbox" checktype="c1" value="Vermont"/>
+			<label for="Checkbox_50" class="zf-checkChoice">Vermont</label> </span>
+	</div>
+	
+	
+	<div class="col-m-4">
+		<span class="zf-multiAttType"> 
+			<input class="zf-checkBoxType" type="checkbox" id="Checkbox_51" name="Checkbox" checktype="c1" value="Wyoming"/>
+			<label for="Checkbox_51" class="zf-checkChoice">Wyoming</label> </span>
+	</div>
+	
+	
+	
+</div>
+<div class="zf-clearBoth"></div></div><p id="Checkbox_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li>
+<!-- --------------------------- -->
+
+<li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName"> 
+	City
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv zf-address">
+	<div class="zf-addrCont">
+	<span class="zf-addOne"> 
+	 </span>
+	 
+	<span class="zf-addOne"> <input type="text" maxlength="100000" name="metatitlecitypage" checktype="c1" placeholder="Enter Meta Title Format" required/>
+	<label>Meta Title</label>
+	 </span>
+	
+	<span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="100000" name="metadescriptioncitypage" checktype="c1" placeholder="Enter Meta Description Format" required/>
+	<label>Meta Description</label>
+	 </span>
+	
+	<div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div></div><div class="zf-eclearBoth"></div></li>
+</li>
+
+<li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName"> 
+	County
+	<em class="zf-important">if required</em>
+	</label>
+	<div class="zf-tempContDiv zf-address">
+	<div class="zf-addrCont">
+	<span class="zf-addOne"> 
+	 </span>
+	 
+	<span class="zf-addOne"> <input type="text" maxlength="100000" name="metatitlecountypage" checktype="c1" placeholder="Enter Meta Title Format"/>
+	<label>Meta Title</label>
+	 </span>
+	
+	<span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="1000000" name="metadescriptioncountypage" checktype="c1" placeholder="Enter Meta Description Format"/>
+	<label>Meta Description</label>
+	 </span>
+	
+	<div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div></div><div class="zf-eclearBoth"></div></li>
+</li>
+
+<!---------Multiple Line Starts Here---------->
+<!-- <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+	Logo root
+	<em class="zf-important">*</em>
+	</label>
+	<div class="zf-tempContDiv">
+	<span> <input type="file" name="logoroot" accept="image/*" required></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div><div class="zf-clearBoth"></div></li>
+	 -->
+<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+Randomized image File root
+</label>
+<div class="zf-tempContDiv">
+<span> <input type="file" name="randomizeimage" accept="image/*" multiple required> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
+<li class="zf-tempFrmWrapper zf-address zf-addrlarge " >
+	<div class="zf-tempContDiv zf-address">
+	<div class="zf-addrCont">
+	
+	 
+	<span class="zf-addOne"> <textarea name="homepagecontents" checktype="c1" placeholder="Add Home Page Contents" style="width: 100%; height: 200px;"></textarea>
+	<label>Home Page Contents</label>
+	 </span>
+	<span class="zf-flLeft zf-addtwo"> <textarea name="statepagecontents" checktype="c1" placeholder="Add State Page Contents" style="width: 100%; height: 200px;"></textarea>
+	<label>State Page Contents</label>
+	 </span>
+	 <span class="zf-flLeft zf-addtwo"> <textarea name="countypagecontents" checktype="c1" placeholder="Add County Page Contents" style="width: 100%; height: 200px;"></textarea>
+	<label>County Page Contents <em class="zf-important">if required</em></label>
+	 </span>
+	<span class="zf-addOne"> <textarea name="citypagecontents" checktype="c1" placeholder="Add City Page Contents" style="width: 100%; height: 200px;"></textarea>
+	<label>City Page Contents</label>
+	</span>
+	
+	
+	<div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+	</div></div><div class="zf-eclearBoth"></div></li>
+</ul></div><!---------template Container Starts Here---------->
+<ul><li class="zf-fmFooter"><button class="zf-submitColor" >Submit</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
+<script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+var zf_MandArray = [ "SingleLine", "Address_AddressLine1", "Address_AddressLine2", "Address_City", "Address_Region", "Address_ZipCode", "Address_Country", "Radio"]; 
+var zf_FieldArray = [ "SingleLine", "Address_AddressLine1", "Address_AddressLine2", "Address_City", "Address_Region", "Address_ZipCode", "Address_Country", "Radio", "Checkbox", "MultiLine"]; 
+var isSalesIQIntegrationEnabled = false;
+var salesIQFieldsArray = [];</script></body></html>

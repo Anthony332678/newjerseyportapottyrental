@@ -1,0 +1,41 @@
+    <br><br><br><br>
+    <!-- contact template 8 just 1 subtopic -->
+    <div class="containeralooma" id="contact">
+        <section class="boxalooma">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="template4 h2alooma">aloomaidheader</h2>
+                <p class="template4 palooma">aloomaidparagraph
+                </p>
+                <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <br><br><br><br>
+    <div class="containeralooma" id="contact">
+        <section class="boxalooma">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="template4 h2alooma" style="margin-left: 400px;">Frequently Asked Questions in #State</h2>
+                <h4 class="template4 palooma">How many porta-potties do I need for my event?
+                </h4>
+                <p>A general rule is 1 unit per 50 guests for a 4-hour event. Call us, and we’ll help calculate your specific needs.</p>
+                <h4 class="template4 palooma">Do you offer same-day delivery in #State?
+                </h4>
+                <p>Yes, we maintain an inventory for urgent requests. Call before noon for same-day delivery options.</p>
+                <h4 class="template4 palooma">Are your portable restrooms ADA compliant?
+                </h4>
+                <p>We offer ADA-compliant units that meet all federal and #State regulations.</p>
+                <h4 class="template4 palooma">How often are the units cleaned?
+                </h4>
+                <p>Weekly service is included, with options for more frequent cleanings depending on use.</p>
+                <h4 class="template4 palooma">Can I rent for just one day?
+                </h4>
+                <p>Yes! Daily, weekend, weekly, and long-term rental options are available.</p>
+                <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+            </div>
+        </div>
+        </section>
+    </div>
